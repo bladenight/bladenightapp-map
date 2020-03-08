@@ -5,7 +5,7 @@ minlon=11.4
 maxlat=48.3
 maxlon=11.8
 
-OSMOSIS=osmosis-0.40.1/bin/osmosis
+OSMOSIS=osmosis-0.47/bin/osmosis
 
 if [ ! -f oberbayern-latest.osm.pbf ] ; then
 wget http://download.geofabrik.de/europe/germany/bayern/oberbayern-latest.osm.pbf || exit 1
