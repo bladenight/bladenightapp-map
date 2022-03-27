@@ -12,7 +12,7 @@ wget http://download.geofabrik.de/europe/germany/bayern/oberbayern-latest.osm.pb
 fi
 
 if [ ! -f munich.osm ] ; then
-time ( "$OSMOSIS" --rb oberbayern-latest.osm.pbf --bb left=$minlon bottom=$minlat right=$maxlon top=$maxlat --wx munich.osm ) || exit 1
+"$OSMOSIS" --rb oberbayern-latest.osm.pbf --bb left=$minlon bottom=$minlat right=$maxlon top=$maxlat --wx munich.osm || exit 1
 fi
 
 TMPFILE=merged.osm
